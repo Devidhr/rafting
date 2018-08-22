@@ -16,24 +16,6 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`jogjarafting` /*!40100 DEFAULT CHARACTE
 
 USE `jogjarafting`;
 
-/*Table structure for table `admin` */
-
-DROP TABLE IF EXISTS `admin`;
-
-CREATE TABLE `admin` (
-  `id_user` int(5) NOT NULL AUTO_INCREMENT,
-  `username` varchar(100) DEFAULT NULL,
-  `password` varchar(50) DEFAULT NULL,
-  `nama` varchar(50) DEFAULT NULL,
-  `images` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`id_user`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
-
-/*Data for the table `admin` */
-
-insert  into `admin`(`id_user`,`username`,`password`,`nama`,`images`) values 
-(8,'admin','21232f297a57a5a743894a0e4a801fc3','Hari','8fee7-jellyfish.jpg');
-
 /*Table structure for table `galeri` */
 
 DROP TABLE IF EXISTS `galeri`;
@@ -95,6 +77,39 @@ insert  into `paket`(`id_paket`,`nama_paket`,`harga_paket`,`durasi`,`tingkat_kes
 (12,'Paket Sumbing','Rp.500.000','5jam','sedang','50','10km','7385f-desert.jpg'),
 (14,'Paket Merbabu','Rp.700.000','7jam','expert','90','15km','1f16d-koala.jpg'),
 (15,'Paket Merapi','Rp.200.000','2jam','mudah','20','5km','b4162-penguins.jpg');
+
+/*Table structure for table `tbl_session` */
+
+DROP TABLE IF EXISTS `tbl_session`;
+
+CREATE TABLE `tbl_session` (
+  `id` varchar(40) NOT NULL,
+  `ip_address` varchar(45) NOT NULL,
+  `timestamp` int(10) NOT NULL,
+  `data` blob NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_session` */
+
+/*Table structure for table `tbl_users` */
+
+DROP TABLE IF EXISTS `tbl_users`;
+
+CREATE TABLE `tbl_users` (
+  `id_user` int(150) NOT NULL AUTO_INCREMENT,
+  `nama_user` varchar(150) NOT NULL,
+  `username` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `images` varchar(150) DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  PRIMARY KEY (`id_user`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+/*Data for the table `tbl_users` */
+
+insert  into `tbl_users`(`id_user`,`nama_user`,`username`,`password`,`images`,`created_at`,`updated_at`) values 
+(1,'Administrator','admin','21232f297a57a5a743894a0e4a801fc3','273b0-koala.jpg','2017-02-21 04:14:16','2017-03-06 13:42:37');
 
 /*Table structure for table `tentang` */
 
