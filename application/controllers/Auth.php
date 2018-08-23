@@ -50,8 +50,8 @@ class Auth extends CI_Controller {
 	                        'user_id'   => $apps->id_user,
 	                        'user_name' => $apps->username,
 	                        'user_pass' => $apps->password,
-	                        'user_poto' => $apps->images,
-	                        'user_nama' => $apps->nama_user
+	                        'user_nama' => $apps->nama_user,
+	                        'user_foto' => $apps->images
 	                    );
 	                    //set session userdata
 	                    $this->session->set_userdata($session_data);
