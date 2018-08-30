@@ -6,9 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
 
         <title>Jogja Rafting</title>
 
+        <link href="<?php echo base_url();?>front/poto/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url();?>front/poto/css/animate.css">
+        <link href="<?php echo base_url();?>front/poto/css/prettyPhoto.css" rel="stylesheet">
+        <link href="<?php echo base_url();?>front/poto/css/style.css" rel="stylesheet" />
         <!--    Google Fonts-->
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 
@@ -28,7 +33,7 @@
         <!--Main Stylesheet-->
         <link href="<?php echo base_url();?>front/css/style.css" rel="stylesheet">
         <!--Responsive Framework-->
-        <link href="<?php echo base_url();?>front/css/responsive.css" rel="stylesheet">
+       
         
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -139,6 +144,7 @@
                            <span><a href=""></a></span></p>
                         </div>
                     </div>
+                    <br>
                     <div class="col-md-6">
                         <div class="designer">
                             <p> By <a href="#">Jogja Rafting</a></p>
@@ -150,8 +156,6 @@
             <!--End of container-->
         </section>
         <!--End of footer-->
-
-
 
         <!--Scroll to top-->
         <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
@@ -210,6 +214,9 @@
         <script src="<?php echo base_url();?>front/js/main.js"></script>
          <script src="js/jquery-2.1.1.min.js"></script>
           <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="<?php echo base_url();?>front/poto/js/jquery-2.1.1.min.js"></script>
+        <script src="<?php echo base_url();?>front/poto/js/jquery.prettyPhoto.js"></script>
+        <script src="<?php echo base_url();?>front/poto/js/functions.js"></script>
           
     </body>
 

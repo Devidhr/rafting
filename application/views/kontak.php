@@ -50,20 +50,24 @@
                                         <div class="form-group">
                                             <div class="col-sm-12">
                                                 <input type="text" class="form-control" name="judul_pesan" id="judul_pesan" placeholder="Subjek Pesan">
-                                                <div class="text_area">
-                                                    <textarea name="isi_pesan" id="isi_pesan" class="form-control" cols="30" rows="8" placeholder="Isi Pesan"></textarea>
-                                                </div>
-                                                <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button>
                                             </div>
                                         </div>
-                                    </form>
+                                         <div class="form-group">
+                                        <div class="col-sm-12">
+                                            <textarea name="isi_pesan" id="isi_pesan" class="form-control" cols="30" rows="8" placeholder="Isi Pesan"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn custom-btn" data-loading-text="Loading...">Send</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
-                    <!--End of col-md-6-->
                 </div>
-                <!--End of row-->
             </div>
-            <!--End of container-->
-        </section>
+        </div>
+        <!--End of col-md-6-->
+    </div>
+    <!--End of row-->
+</div>
+<!--End of container-->
+</section>

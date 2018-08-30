@@ -10,7 +10,7 @@ class Admin extends CI_Controller {
 	
 	function encrypt_pw($post_array){
 		if (!empty($post_array['password'])) {
-				$post_array['password']= MD5($_POST['password']);
+				$post_array['password']= sha1($_POST['password']);
 
 		}
 		return $post_array;

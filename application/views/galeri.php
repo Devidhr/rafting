@@ -1,6 +1,4 @@
-
- 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,19 +6,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Company-HTML Bootstrap theme</title>
-
-  <!-- Bootstrap -->
-   <link href="<?php echo base_url();?>front/poto/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="<?php echo base_url();?>front/poto/css/font-awesome.min.css">
-  <link rel="stylesheet" href="<?php echo base_url();?>front/poto/css/animate.css">
-  <link href="<?php echo base_url();?>front/poto/css/prettyPhoto.css" rel="stylesheet">
-  <link href="<?php echo base_url();?>front/poto/css/style.css" rel="stylesheet" />
-  <!-- =======================================================
-    Theme Name: Company
-    Theme URL: https://bootstrapmade.com/company-free-html-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
 </head>
 
 <body>
@@ -54,8 +39,9 @@
                  <?php
                     }
                     ?>
-                <div class="recent-work-inner">
-                  <h5><?php echo $key->nama_galeri; ?></h5>
+                  <div class="recent-work-inner">
+                  <!--&nbsp;<h5><?php echo $key->nama_galeri; ?></h5>--><br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <a class="preview btn btn-info btn-sm" href="<?php echo base_url()?>front/img/galeri/<?php echo $key->images; ?>" rel="prettyPhoto"><i class="fa fa-eye"></i>&nbsp;Lihat</a>
                 </div>
               </div>
@@ -67,9 +53,7 @@
     </div>
   </section>
   <!--/#portfolio-item-->
- <script src="<?php echo base_url();?>front/poto/js/jquery-2.1.1.min.js"></script>
-  <script src="<?php echo base_url();?>front/poto/js/jquery.prettyPhoto.js"></script>
-  <script src="<?php echo base_url();?>front/poto/js/functions.js"></script>
+
 
 </body>
 

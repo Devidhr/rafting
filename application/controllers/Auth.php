@@ -37,7 +37,7 @@ class Auth extends CI_Controller {
 
 				//get data dari FORM
 	            $username = $this->input->post("username", TRUE);
-	            $password = MD5($this->input->post('password', TRUE));
+	            $password = sha1($this->input->post('password', TRUE));
 	            
 	            //checking data via model
 	            $checking = $this->M_auth->check_login('tbl_users', array('username' => $username), array('password' => $password));
