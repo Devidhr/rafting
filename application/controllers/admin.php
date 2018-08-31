@@ -16,6 +16,7 @@ class Admin extends CI_Controller {
 		return $post_array;
 	}
 
+
 	public function user()
 	{
 		if($this->M_auth->logged_id())
@@ -30,6 +31,10 @@ class Admin extends CI_Controller {
 		$crud->callback_before_update(array($this,'encrypt_pw'));
 		$crud->unset_clone();
 		$output = $crud->render();
+		$output->judul_besar='User';
+		$output->judul_kecil='Kelola User';
+		$output->manage_user=TRUE;
+
 		//$this->_example_output($output);
 		$this->template->load('admin/static.php','admin/data',$output);
 		}
@@ -50,6 +55,9 @@ class Admin extends CI_Controller {
 		$crud->unset_export();
 		$crud->set_field_upload('images','front/img/paket');
 		$output = $crud->render();
+		$output->judul_besar='Paket';
+		$output->judul_kecil='Kelola Paket';
+		$output->manage_paket=TRUE;
 		//$this->_example_output($output);
 		$this->template->load('admin/static.php','admin/data',$output);
 		}
@@ -69,6 +77,9 @@ class Admin extends CI_Controller {
 		$crud->unset_export();
 		$crud->set_field_upload('images','front/img/galeri');
 		$output = $crud->render();
+		$output->judul_besar='Galeri';
+		$output->judul_kecil='Kelola Galeri';
+		$output->manage_galeri=TRUE;
 		//$this->_example_output($output);
 		$this->template->load('admin/static.php','admin/data',$output);
 		}
@@ -91,6 +102,9 @@ class Admin extends CI_Controller {
 		$crud->unset_export();
 		$crud->unset_add();
 		$output = $crud->render();
+		$output->judul_besar='Tentang';
+		$output->judul_kecil='Kelola Tentang';
+		$output->manage_tentang=TRUE;
 		//$this->_example_output($output);
 		$this->template->load('admin/static.php','admin/data',$output);
 		}
@@ -109,6 +123,9 @@ class Admin extends CI_Controller {
 		$crud->unset_edit();
 		$crud->unset_add();
 		$output = $crud->render();
+		$output->judul_besar='Kontak';
+		$output->judul_kecil='Kelola Kontak';
+		$output->manage_kontak=TRUE;
 		//$this->_example_output($output);
 		$this->template->load('admin/static.php','admin/data',$output);
 		}

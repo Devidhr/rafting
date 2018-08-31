@@ -29,6 +29,7 @@
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="<?php echo base_url();?>assets/admin/js/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
+ 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -174,7 +175,9 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 3 -->
+<?php if (isset($js_files)) { ?>
 <script src="<?php echo base_url();?>assets/admin/jquery/dist/jquery.min.js"></script>
+<?php } ?>
 <!-- jQuery UI 1.11.4 -->
 <script src="<?php echo base_url();?>assets/admin/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -226,11 +229,14 @@
     })
   })
 </script>
+ <?php if(isset($css_files)) { ?>
   <?php foreach ($css_files as $file):?>
       <link rel="stylesheet" type="text/css" href="<?php echo $file;?>"/>
   <?php endforeach;?>
      <?php foreach($js_files as $file): ?>
         <script src="<?php echo $file; ?>"></script>
   <?php endforeach; ?>
+  <?php } ?>
+
 </body>
 </html>

@@ -1,7 +1,7 @@
 <section class="content-header">
       <h1>
-        Dashboard
-        <small><?php echo 'class'?></small>
+        <?=$judul_besar?>
+        <small><?=$judul_kecil?></small>
       </h1>
     </section>
 
